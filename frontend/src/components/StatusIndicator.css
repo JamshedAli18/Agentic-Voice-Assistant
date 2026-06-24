@@ -1,0 +1,83 @@
+/* src/components/StatusIndicator.css */
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  transition: all 0.3s ease;
+  color: var(--accent);
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: 0 0 4px currentColor;
+}
+
+.status-idle .status-dot {
+  background: var(--text-muted);
+  box-shadow: none;
+}
+.status-idle {
+  color: var(--text-muted);
+  background: rgba(107, 114, 128, 0.08);
+  border-color: rgba(107, 114, 128, 0.2);
+}
+
+.status-listening .status-dot {
+  background: var(--listening);
+  animation: pulse-status 1.2s ease-in-out infinite;
+}
+.status-listening {
+  color: var(--listening);
+  background: rgba(249, 115, 22, 0.08);
+  border-color: rgba(249, 115, 22, 0.2);
+}
+
+.status-thinking .status-dot {
+  background: var(--thinking);
+  animation: pulse-status 1.2s ease-in-out infinite;
+}
+.status-thinking {
+  color: var(--thinking);
+  background: rgba(245, 158, 11, 0.08);
+  border-color: rgba(245, 158, 11, 0.2);
+}
+
+.status-speaking .status-dot {
+  background: var(--speaking);
+  animation: pulse-status 1.2s ease-in-out infinite;
+}
+.status-speaking {
+  color: var(--speaking);
+  background: rgba(16, 185, 129, 0.08);
+  border-color: rgba(16, 185, 129, 0.2);
+}
+
+.status-error .status-dot {
+  background: var(--listening);
+}
+.status-error {
+  color: var(--listening);
+  background: rgba(239, 68, 68, 0.08);
+  border-color: rgba(239, 68, 68, 0.2);
+}
+
+@keyframes pulse-status {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 4px currentColor;
+  }
+  50% {
+    opacity: 0.4;
+    box-shadow: 0 0 8px currentColor;
+  }
+}
