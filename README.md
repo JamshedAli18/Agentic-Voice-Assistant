@@ -1,7 +1,6 @@
 # Agentic Voice Assistant
 
 A powerful, full-stack real-time voice and text conversational AI application. This system integrates advanced Speech-to-Text (STT) and Text-to-Speech (TTS) capabilities powered by Groq and Cartesia, orchestrated through a LangGraph agentic backend, and presented in a sleek, responsive React frontend.
-
 ---
 
 ## Features
