@@ -4,7 +4,7 @@ A powerful, full-stack real-time voice and text conversational AI application. T
 ---
 
 ## Features
-
+ 
 - **Real-Time Voice Interaction:** Seamlessly record audio, transcribe it via Groq Whisper, and receive human-like vocal responses powered by Cartesia.
 - **Agentic Capabilities:** The AI doesn't just chat—it thinks. Powered by LangGraph, it can utilize tools like Tavily for live web searches.
 - **Streaming Text Chat:** A text-fallback mode that streams LLM responses in real-time via Server-Sent Events (SSE).
