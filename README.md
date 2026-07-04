@@ -119,7 +119,7 @@ The frontend will be available at `http://localhost:5173`.
 1. Import the repository into Vercel.
 2. Set the Root Directory to `frontend`.
 3. Add the `VITE_API_URL` environment variable pointing to your deployed Render backend URL.
-4. Deploy!
+4. Deployed!
 
 ---
 
